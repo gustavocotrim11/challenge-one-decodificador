@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Nesse projeto foi criado uma aplicação front-end de um decodificador de texto com Javascript. A aplicação permite ao usuário criptografe e descriptografe mensagens.
+  Nesse projeto foi criado uma aplicação front-end de um decodificador de texto com Javascript. A aplicação permite ao usuário criptografar e descriptografar mensagens.
 </p>
 
 
