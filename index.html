@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="/images/logo.png" />
+    <title>Decodificador</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="/images/logo.png"
+        alt="Loga da alura, representado pela inicial a"
+      />
+    </header>
+
+    <main class="main">
+      <section>
+        <textarea
+          class="input-text"
+          cols="40"
+          rows="6"
+          placeholder="Digite seu texto"
+        ></textarea>
+
+        <div>
+          <h6 class="info">🛈 Apenas letras minúsculas e sem acento.</h6>
+        </div>
+
+        <div class="buttons">
+          <button class="encrypt" onclick="btnEncrypt()">Criptografar</button>
+          <button class="decrypt" onclick="btnDecrypt()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+
+      <section class="result-section">
+        <div class="message-container">
+          <textarea class="message" cols="20" rows="10" readonly></textarea>
+          <div class="tooltip">
+            <button class="copy" onclick="copyMessage()" onmouseout="outFunc()">
+              <span class="tooltiptext" id="myTooltip"
+                >Copiar para área de transferência</span
+              >
+              Copiar
+            </button>
+          </div>
+        </div>
+
+        <div class="background-message">
+          <img
+            src="/images/background.png"
+            alt="Imagem de background, figura animada de uma pessoa do sexo masculino de joelhos, branca, com calça branca, camisa azul, cabelos azuis, inspecionando um diamente em sua frente através de uma lupa"
+          />
+          <p>Nenhuma mensagem encontrada</p>
+          <span
+            >Digite um texto que você deseja criptografar ou
+            descriptografar</span
+          >
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
